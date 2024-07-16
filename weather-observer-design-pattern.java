@@ -12,7 +12,7 @@ public interface WeatherStation {
 
     void notifiesUsers(String message);
     void addUsers(Observer user);
-    void removeUsers(Observer user):
+    void removeUsers(Observer user);
 
 }
 
