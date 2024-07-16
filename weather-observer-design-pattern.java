@@ -8,7 +8,7 @@ Solution: Observer Design pattern
 
 */
 
-public Interface WeatherStation {
+public interface WeatherStation {
 
     void notifiesUsers(String message);
     void addUsers(Observer user);
@@ -46,7 +46,7 @@ public class WeatherStationImpl implements WeatherStation {
 
 } 
 
-public Interface Observer {
+public interface Observer {
 
     void sendMessage(String msg);
 
@@ -72,6 +72,11 @@ public class User {
 
     private String name;
     private int id;
+
+    public User(String name, int id){
+        this.name = name;
+        this.id = id;
+    }
 
 }
 
